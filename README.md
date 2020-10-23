@@ -2,5 +2,5 @@
 Search any word in the web
 
 Requirments libraries
-Tkinter
-Beautifulsoup
+* Tkinter
+* Beautifulsoup
