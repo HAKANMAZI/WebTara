@@ -7,19 +7,20 @@ root.geometry("1500x600")
 
 link_var=tk.StringVar() 
 kelime_var=tk.StringVar() 
-  
+
+class hyperlink():
+    def __init__(self,i):
+        link = tk.Label(root, text=i, fg="blue", cursor="hand2")
+        link.grid()
+        link.bind("<Button-1>", lambda event: webbrowser.open_new(i))
+
 def submit(): 
     link=link_entry.get() 
     kelime=kelime_var.get() 
 
     links = ara.webara(link, kelime)
     for i in links:
-        link = tk.Label(root, text=i, fg="blue", cursor="hand2")
-        link.grid()
-        link.bind("<Button-1>", lambda event: webbrowser.open(link.cget("text")))
-      
-    print("The link is : " + str(link)) 
-    print("The kelime is : " + kelime) 
+        a = hyperlink(i)  
       
     link_var.set("") 
     kelime_var.set("") 

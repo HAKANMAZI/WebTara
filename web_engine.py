@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup, SoupStrainer
 import requests
+import thread
 
 url = "https://www.sondakika.com/"
 kelime = "PKK"
