@@ -2,5 +2,8 @@
 Search any word in the web
 
 Requirments libraries
-* Tkinter
-* Beautifulsoup
+* pip install bs4
+* pip install requests
+* pip install beautifulsoup
+* pip install tkinter
+
