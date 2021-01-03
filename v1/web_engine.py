@@ -3,7 +3,7 @@ import requests
 import thread
 
 url = "https://www.sondakika.com/"
-kelime = "PKK"
+kelime = "kedi"
 
 def webara(url, kelime):
     page = requests.get(url)    
